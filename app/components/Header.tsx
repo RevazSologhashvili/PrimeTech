@@ -13,7 +13,8 @@ export default function Header() {
         <div className='my-5'>
             <header className='max-w-[90%] rounded-full bg-white flex items-center justify-between text-gray-600 px-5 py-3 mx-auto border shadow-md'>
                 <Link href={'/'}>
-                    <Image src={"/logo.png"} width={100} height={50} alt='logo' className='aspect-video object-cover' />
+                    {/* <Image src={"/logo.png"} width={100} height={50} alt='logo' className='aspect-video object-cover' /> */}
+                    <h2 className='text-center text-gray-700'>LOGO</h2>
                 </Link>
 
                 <nav className='flex-1 ml-10'>
