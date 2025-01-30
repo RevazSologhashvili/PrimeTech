@@ -15,19 +15,21 @@ export default function Page() {
     try {
       await sendMail({ from, to: 'rezosologa@gmail.com', subject, text });
       alert("Email sent successfully!");
-    setFrom("");
-    setSubject("");
-    setText("");
+      setFrom("");
+      setSubject("");
+      setText("");
     } catch (error) {
       console.error("Failed to send email:", error);
       alert("Failed to send email.");
     }
   };
 
+
+
   return (
     <>
-    <div>
-    </div>
+      <div>
+      </div>
       <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-gradient-to-r from-blue-900 to-purple-900">
         <div className="flex flex-col md:flex-row w-full max-w-7xl bg-white/10 backdrop-blur-lg rounded-lg shadow-lg overflow-hidden">
           <div className="w-full md:w-1/2 p-6 bg-gradient-to-r from-blue-800 to-purple-800 text-white">
@@ -91,3 +93,4 @@ export default function Page() {
     </>
   );
 }
+

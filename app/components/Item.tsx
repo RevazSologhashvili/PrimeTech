@@ -6,6 +6,7 @@ interface ItemProps {
     title: string;
     description: string;
     imagePath: string;
+    linkTo: string;
 }
 
 const Item = (item: ItemProps) => {
