@@ -4,5 +4,28 @@
 
 
 .main-min-height {
-    height: calc(100dvh - 180px);
+    height: 3000px;
 }
+
+
+
+  
+  .bg-main {
+    background-image: url('/assets/m-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(40px);
+    animation: moveBackground 60s infinite linear; /* Adjust duration (10s) to your liking */
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 50% 50%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }

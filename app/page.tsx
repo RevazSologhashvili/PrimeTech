@@ -1,9 +1,9 @@
-import Items from "./components/Items";
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <div>
-      <Items />
-    </div>
+    <main className="main-min-height bg-main">
+      <Hero />
+    </main>
   );
 }
