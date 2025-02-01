@@ -1,7 +1,5 @@
 "use client";
 import { sendMail } from "@/app/api/actions";
-import Image from "next/image";
-import Link from "next/link";
 import React, { useState } from "react";
 
 export default function Page() {
