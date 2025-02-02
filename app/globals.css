@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 
+
 .main-min-height {
     height: 3000px;
 }
@@ -29,3 +30,48 @@
       background-position: 0% 0%;
     }
   }
+
+/* Ensure the cursor is properly hidden and custom cursor follows */
+body {
+  cursor: none;
+}
+
+/* Exception for clickable elements */
+a, button, input, textarea, [role="button"] {
+  cursor: none;
+}
+
+/* Hover animation */
+a:hover ~ .cursor,
+button:hover ~ .cursor {
+  transform: scale(1.5);
+}
+
+.topAll {
+  z-index: 9999;
+}
+/* Click animation */
+@keyframes click {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* Optional: Hide the default cursor globally */
+* {
+cursor: none;
+}
+
+a, button {
+  cursor: none;
+}
+
+
