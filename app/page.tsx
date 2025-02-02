@@ -2,7 +2,7 @@ import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <main className="main-min-height bg-main">
+    <main className="bg-main">
       <Hero />
     </main>
   );
