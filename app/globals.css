@@ -13,7 +13,7 @@
   
   .bg-main {
     background-image: url('/assets/m-bg.jpg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-size: cover;
     backdrop-filter: blur(40px);
     animation: moveBackground 60s infinite linear; /* Adjust duration (10s) to your liking */
@@ -32,26 +32,26 @@
   }
 
 /* Ensure the cursor is properly hidden and custom cursor follows */
-body {
+/* body {
   cursor: none;
-}
+} */
 
 /* Exception for clickable elements */
-a, button, input, textarea, [role="button"] {
+/* a, button, input, textarea, [role="button"] {
   cursor: none;
-}
+} */
 
 /* Hover animation */
-a:hover ~ .cursor,
+/* a:hover ~ .cursor,
 button:hover ~ .cursor {
   transform: scale(1.5);
-}
+} */
 
-.topAll {
+/* .topAll {
   z-index: 9999;
-}
+} */
 /* Click animation */
-@keyframes click {
+/* @keyframes click {
   0% {
     transform: scale(1);
     opacity: 1;
@@ -64,14 +64,14 @@ button:hover ~ .cursor {
     transform: scale(1);
     opacity: 1;
   }
-}
+} */
 /* Optional: Hide the default cursor globally */
-* {
+/* * {
 cursor: none;
 }
 
 a, button {
   cursor: none;
-}
+} */
 
 
