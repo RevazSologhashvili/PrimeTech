@@ -57,14 +57,14 @@ const ContactPage = () => {
     }
   };
 
-  const scaleUp = {
-    hidden: { scale: 0.8, opacity: 0 },
-    visible: { 
-      scale: 1, 
-      opacity: 1,
-      transition: { duration: 0.5 }
-    }
-  };
+  // const scaleUp = {
+  //   hidden: { scale: 0.8, opacity: 0 },
+  //   visible: { 
+  //     scale: 1, 
+  //     opacity: 1,
+  //     transition: { duration: 0.5 }
+  //   }
+  // };
 
   const pulseAnimation = {
     scale: [1, 1.05, 1],
@@ -226,7 +226,7 @@ const ContactPage = () => {
             </div>
 
             {/* Social Media */}
-            <motion.div 
+            {/* <motion.div 
               variants={scaleUp}
               className="bg-gray-800 backdrop-blur-lg bg-opacity-50 p-8 rounded-xl border border-gray-700 shadow-lg"
             >
@@ -283,7 +283,7 @@ const ContactPage = () => {
                   </motion.a>
                 ))}
               </div>
-            </motion.div>
+            </motion.div> */}
           </motion.div>
 
           {/* Contact Form */}
