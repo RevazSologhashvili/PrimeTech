@@ -90,9 +90,7 @@ const ContactPage = () => {
     setFormData((prev: FormData) => ({ ...prev, [name]: value }));
   };
 
-  interface FormEvent extends React.FormEvent<HTMLFormElement> {}
-
-  const handleSubmit = async (e: FormEvent): Promise<void> => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>): Promise<void> => {
     e.preventDefault();
     setFormStatus({ submitted: false, error: false, message: '' });
 
