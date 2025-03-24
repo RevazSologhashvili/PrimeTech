@@ -145,7 +145,7 @@ const AboutUs = () => {
                 className="text-gray-300"
                 variants={fadeIn}
               >
-                ჩვენი გუნდი შედგება კვალიფიციური IT სპეციალისტისგან, რომლებსაც აქვთ მრავალწლიანი გამოცდილება სხვადასხვა ტექნოლოგიურ სფეროში.
+                ჩვენი გუნდი შედგება კვალიფიციური IT სპეციალისტებისგან, რომლებსაც აქვთ მრავალწლიანი გამოცდილება სხვადასხვა ტექნოლოგიურ სფეროში.
               </motion.p>
             </div>
           </motion.div>
@@ -226,77 +226,7 @@ const AboutUs = () => {
           </div>
         </motion.div>
 
-        {/* Team section */}
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.1 }}
-          className="mb-24"
-        >
-          <motion.h3 
-            variants={fadeIn}
-            className="text-3xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent pb-3"
-          >
-            ჩვენი გუნდი
-          </motion.h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 2xl:grid-cols-5 gap-8">
-            {[
-              {
-                name: "დავით ტატუნაშვილი",
-                // position: "დამფუძნებელი & CEO",
-               
-              },
-              {
-                name: "კახი ბილანიშვილი",
-                // position: "ფინანსური დირექტორი",
-                
-              },
-              {
-                name: "რევაზ სოლოღაშვილი",
-                // position: "ტექნიკური დირექტორი",
-              
-              },
-              {
-                name: "გიორგი რუხაძე",
-                // position: "მარკეტინგის დირექტორი",
-               
-              },
-              {
-                name: "ალექსანდრე ისაკაძე",
-                // position: "საოპერაციო დირექტორი",
-              
-              },
-         
-            ].map((member, index) => (
-              <motion.div 
-                key={index}
-                variants={scaleUp} 
-                className="group"
-              >
-                <motion.div 
-                  className="relative overflow-hidden rounded-xl bg-gray-800 backdrop-blur-lg bg-opacity-50"
-                  whileHover={{ 
-                    y: -10,
-                    transition: { duration: 0.3 }
-                  }}
-                >
-                 
-                  <motion.div 
-                    className="p-6 relative backdrop-blur-sm text-center space-y-2"
-                    initial={{ y: 20, opacity: 0 }}
-                    whileInView={{ y: 0, opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.1 * index }}
-                  >
-                    <h4 className="text-xl font-bold text-white mb-1">{member.name}</h4>
-                    <div className='h-[2px] p-0 rounded-xl w-full  bg-blue-400'></div>
-                    {/* <p className="text-blue-400">{member.position}</p> */}
-                  </motion.div>
-                </motion.div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+  
 
         {/* Stats section */}
         <motion.div
@@ -309,7 +239,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-center">
             {[
               // { value: "10+", label: "წელი ბაზარზე" },
-              { value: "300+", label: "კმაყოფილი კლიენტი" },
+              { value: "30+", label: "კმაყოფილი კლიენტი" },
               { value: "5+", label: "IT სპეციალისტი" },
               { value: "24/7", label: "მხარდაჭერა" }
             ].map((stat, index) => (

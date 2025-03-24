@@ -141,32 +141,6 @@ const ContactPage = () => {
         viewport={{ once: true, amount: 0.1 }}
         className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl"
       >
-        {/* Section header */}
-        <motion.div 
-          variants={fadeIn}
-          className="text-center mb-20"
-        >
-          <motion.h2 
-            className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent pb-3"
-            animate={{ 
-              backgroundPosition: ["0% 50%", "100% 50%", "0% 50%"],
-            }}
-            transition={{ 
-              duration: 15, 
-              repeat: Infinity,
-              ease: "linear" 
-            }}
-          >
-            დაგვიკავშირდით
-          </motion.h2>
-         
-          <motion.p 
-            variants={fadeIn}
-            className="mt-4 text-gray-300 max-w-2xl mx-auto text-lg"
-          >
-            გაკვანეთ რითი შეგვიძლია დაგეხმაროთ - ჩვენ ყოველთვის მზად ვართ თქვენს საკითხებზე სასაუბროდ
-          </motion.p>
-        </motion.div>
 
         {/* Contact Information and Form */}
         <motion.div 
